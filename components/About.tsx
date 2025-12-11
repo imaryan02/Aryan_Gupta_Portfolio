@@ -11,7 +11,7 @@ const About = () => {
             <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 relative group">
                      <img 
-                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80" 
+                        src="/images/team.jpeg" 
                         alt="Coding Session" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />

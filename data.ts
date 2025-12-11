@@ -123,8 +123,8 @@ export const STORIES: Story[] = [
     role: "System Engineer Trainee",
     company: "Infosys Mysuru",
     date: "2025",
-    imageUrl: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80",
-    link: "https://www.linkedin.com/in/imaryan02", // Update with actual post link
+    imageUrl: "/images/infy.jpeg",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7399117446961520640/", // Update with actual post link
     tags: ["#InfosysMysuru", "#Resilience", "#SystemEngineer"],
     description: "4–5 months of intense training... A lot of ups and downs, moments of low confidence, and a journey full of learning. Morning 9:15 AM – 5:30 PM back-to-back classes. During my stream training, I hit my lowest. I scored 56%, then 58% — and only one exam was left. I had to cross 65% to clear training in the first attempt. My last hope was the Group Project. I gave my 110%, and our project turned out exceptionally well! Scored 92/100. It was none other than God’s plan. And finally, I have the Black Tag."
   },
@@ -134,8 +134,8 @@ export const STORIES: Story[] = [
     role: "Prompt Engineer",
     company: "Brand Innerworld",
     date: "Nov 2023",
-    imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80",
-    link: "https://www.linkedin.com/in/imaryan02", // Update with actual post link
+    imageUrl: "/images/bii.jpeg",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7136428089676341248/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7136428089676341248%29", // Update with actual post link
     tags: ["#AIWorkshop", "#Cipla", "#PromptEngineering"],
     description: "Just a few days into my internship, I had the incredible opportunity to be part of a transformative workshop on 'BRAND BUILDING BREAKTHROUGHS-USING AI' at Cipla’s Mumbai head office. Led by industry veterans, we unveiled the potential of AI tools like ChatGPT and MidJourney. My segment delved into Market Data Analysis, where I explored the vital role of data in shaping impactful branding strategies. The energy from the 50+ Brand Managers was truly inspiring."
   },
@@ -145,8 +145,8 @@ export const STORIES: Story[] = [
     role: "Team Lead",
     company: "Smart India Hackathon",
     date: "2023",
-    imageUrl: "https://images.unsplash.com/photo-1504384308090-c54be3855463?auto=format&fit=crop&q=80",
-    link: "https://www.linkedin.com/in/imaryan02", // Update with actual post link
+    imageUrl: "/images/sih.jpeg",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7136786988896075776/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7136786988896075776%29", // Update with actual post link
     tags: ["#SIH2023", "#Leadership", "#MentalHealthTech"],
     description: "Team YuvaShakti participated in Smart India Hackathon 2023. Out of 71 participating teams, we secured an impressive 8th position in prelims. Our Problem Statement focused on a Mental health surveillance solution. We worked tirelessly day and night, overcoming countless sleepless nights. Though it hurts that we couldn't make it to the SIH finals, the journey of 3 months taught us teamwork, resilience, and the power of believing in a shared vision."
   }
@@ -164,7 +164,7 @@ export const PROJECTS: Project[] = [
       demo: "https://dramit.com", // Placeholder
       github: "https://github.com/imaryan02/dr-amit-portfolio"
     },
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+    imageUrl: "/images/drAmitkr.jpeg",
     tags: ["HealthTech", "Branding", "Bilingual"],
     techStack: ["React.js", "Tailwind CSS", "Supabase"],
     hook: "Premium bilingual personal branding website for a gastroenterologist, inspired by Paytm / Zomato UX, built for Tier-2 India.",
@@ -192,7 +192,7 @@ export const PROJECTS: Project[] = [
     links: {
       github: "https://github.com/imaryan02/wellmind-junction"
     },
-    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80",
+    imageUrl: "/images/wellmind.png",
     tags: ["AI", "Mental Health", "TensorFlow"],
     techStack: ["React.js", "TensorFlow.js", "Gemini API", "Supabase"],
     hook: "AI-powered mental wellness platform with real-time emotion recognition and Arogya, an AI therapist-style chatbot.",
@@ -218,7 +218,7 @@ export const PROJECTS: Project[] = [
     links: {
       github: "https://github.com/imaryan02/spotme-faceapi"
     },
-    imageUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80",
+    imageUrl: "/images/spotme.png",
     tags: ["Computer Vision", "Privacy", "Offline"],
     techStack: ["React.js", "FaceAPI.js", "Local Inference"],
     hook: "Privacy-first offline photo finder for event photos (like Indian weddings), 98% accurate, works with local folders.",
@@ -265,7 +265,7 @@ export const PROJECTS: Project[] = [
     links: {
       demo: "https://copypaste.guru"
     },
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80",
+    imageUrl: "/images/copypaste.png",
     tags: ["Productivity", "Real-Time"],
     techStack: ["React", "Supabase Realtime"],
     hook: "Room-based, real-time note sharing for quick collaboration without login fatigue.",
