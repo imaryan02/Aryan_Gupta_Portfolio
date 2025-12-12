@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Aryan Gupta Portfolio
 
-# Run and deploy your AI Studio app
+A long-awaited project.
+Planned for the last 3–4 years to make it happen!
 
-This contains everything you need to run your app locally.
+𝗙𝗶𝗻𝗮𝗹𝗹𝘆, 𝗺𝘆 𝗽𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼 𝗶𝘀 𝗻𝗼𝘄 𝗹𝗶𝘃𝗲 😁🚀
 
-View your app in AI Studio: https://ai.studio/apps/drive/1r2umLx8zUqip70PWHbBYRsTPh0Gmwkhz
+This has always been more than just a website.
 
-## Run Locally
+I’ve always dreamed of building for India, and I’ve tried to reflect that vision through an Indian flag–inspired color essence across the design 🇮🇳
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+A journey years in the making.
