@@ -63,7 +63,7 @@ const Contact = () => {
                                 <Instagram size={28} className="text-gray-400 group-hover:text-white transition-colors" />
                                 <div>
                                     <span className="text-2xl font-clash font-bold text-gray-300 group-hover:text-white block">Instagram</span>
-                                    <span className="text-xs font-mono text-gray-500 group-hover:text-pink-100 uppercase tracking-widest">@imaryan02</span>
+                                    <span className="text-xs font-mono text-gray-500 group-hover:text-pink-100 uppercase tracking-widest">@im_aryan02</span>
                                 </div>
                             </div>
                             <ArrowUpRight className="text-gray-500 group-hover:text-white group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
