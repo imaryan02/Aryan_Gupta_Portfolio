@@ -12,11 +12,12 @@ export const EXPERIENCE: Experience[] = [
   {
     id: "infosys",
     company: "Infosys",
-    role: "System Engineer / Trainee",
+    role: "System Engineer",
     period: "2025 – Present",
     bullets: [
-      "Focusing on enterprise-scale system architecture and software development best practices.",
-      "Undergoing rigorous training in full-stack methodologies and cloud infrastructure."
+      "Started as a System Engineer Trainee and completed 6 months of structured training at the Infosys Mysuru campus.",
+      "Trained in Java, Advanced Java, Spring Boot, React (TypeScript), OOPs, DBMS, and SQL.",
+      "Currently working as a full-time System Engineer, focusing on writing clean, scalable code and understanding enterprise systems."
     ]
   },
   {
@@ -25,8 +26,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Machine Learning Trainee",
     period: "2024",
     bullets: [
-      "Selected among a highly competitive applicant pool for specialized ML training.",
-      "Gained hands-on experience with ML fundamentals, supervised learning, and real-world model deployment."
+      "Selected from a large applicant pool for Amazon’s Machine Learning Summer School program.",
+      "Learned machine learning fundamentals, problem framing, and how ML is applied in real-world products."
     ]
   },
   {
@@ -35,9 +36,9 @@ export const EXPERIENCE: Experience[] = [
     role: "Prompt Engineer",
     period: "Nov 2023 – Feb 2024",
     bullets: [
-      "Architected a custom Data Analyst GPT for pharma analytics, increasing processing efficiency by 40%.",
-      "Achieved 30% higher response accuracy through advanced prompt engineering techniques.",
-      "Led a generative AI workshop for 50+ brand managers at Cipla."
+      "Built a custom Data Analyst GPT for pharmaceutical data analysis, improving processing efficiency by 40%.",
+      "Improved response accuracy by around 30% using structured prompt design and domain-specific context.",
+      "Conducted generative AI workshops for 50+ brand managers at Cipla, focusing on practical AI usage."
     ]
   },
   {
@@ -46,8 +47,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Frontend Web Developer (Freelance)",
     period: "Freelance",
     bullets: [
-      "Developed a responsive, high-performance beauty e-commerce interface.",
-      "Optimized UX for mobile users, resulting in increased session duration."
+      "Developed a responsive and user-friendly website for a beauty and cosmetics brand.",
+      "Focused on mobile performance, clean UI, and smooth user experience."
     ]
   },
   {
@@ -56,21 +57,22 @@ export const EXPERIENCE: Experience[] = [
     role: "Web Developer",
     period: "Project",
     bullets: [
-      "Built and deployed the official product website (oceanbiotech.in).",
-      "Designed a clean catalog system for pharmaceutical products."
+      "Designed and developed the official website for a pharmaceutical company (oceanbiotech.in).",
+      "Worked on presenting product information in a clear and structured way."
     ]
   },
   {
     id: "yuvashakti",
-    company: "YuvaShakti Team Lead",
-    role: "Leadership",
+    company: "YuvaShakti",
+    role: "Team Lead",
     period: "College",
     bullets: [
-      "Led a 6-member team to Top 15 in Smart India Hackathon (SIH) 2024 internal rounds.",
-      "Secured 8th position in SIH SKIT 2023 prelims, driving project strategy and execution."
+      "Led a 6-member team and reached Top 15 in Smart India Hackathon (SIH) 2024 internal rounds.",
+      "Secured 8th position in SIH SKIT 2023 prelims by handling project direction and execution."
     ]
   }
 ];
+
 
 export const EDUCATION: EducationItem[] = [
   {
@@ -96,23 +98,23 @@ export const EDUCATION: EducationItem[] = [
 export const SKILLS: SkillCategory[] = [
   {
     title: "Programming",
-    summary: "Core logic and algorithmic problem solving.",
+    summary: "Writing logic-driven code and solving problems step by step.",
     skills: ["Java", "Python", "TypeScript", "JavaScript", "C"]
   },
   {
     title: "Frontend & UI",
-    summary: "Crafting pixel-perfect, accessible digital experiences.",
+    summary: "Building clean, responsive interfaces that are easy to use.",
     skills: ["React.js", "Tailwind CSS", "Framer Motion", "UI/UX Design", "FaceAPI.js", "Electron.js"]
   },
   {
     title: "AI & ML",
-    summary: "Integrating intelligence into web applications.",
-    skills: ["TensorFlow.js", "Gemini API", "LangChain", "Prompt Engineering", "RAG Architecture"]
+    summary: "Using AI tools to add real functionality to applications.",
+    skills: ["TensorFlow.js", "Gemini API", "LangChain", "Prompt Engineering"]
   },
   {
     title: "Backend & Infra",
-    summary: "Scalable foundations and deployment.",
-    skills: ["Supabase", "GCP", "Selenium", "Git", "Docker"]
+    summary: "Working with backend services, databases, and cloud tools.",
+    skills: ["Node.js", "Express.js", "PostgreSQL", "MySQL", "Supabase", "GCP", "Git", "Docker"]
   }
 ];
 
@@ -156,221 +158,312 @@ export const PROJECTS: Project[] = [
   {
     id: "dr-amit",
     title: "Dr. Amit Personal Branding",
-    tagline: "Premium Medical Portfolio for Tier-2 India",
+    tagline: "Medical Website for Tier-2 / Tier-3 India",
     type: "Flagship",
     nature: "Freelance",
-    date: "Jan 2025",
+    date: "Jun 2025 – Present",
     links: {
-      demo: "https://dramit.com", // Placeholder
-      github: "https://github.com/imaryan02/dr-amit-portfolio"
+      demo: "https://dramitgastro.com"
     },
     imageUrl: "/images/drAmitkr.jpeg",
     tags: ["HealthTech", "Branding", "Bilingual"],
     techStack: ["React.js", "Tailwind CSS", "Supabase"],
-    hook: "Premium bilingual personal branding website for a gastroenterologist, inspired by Paytm / Zomato UX, built for Tier-2 India.",
+    hook:
+      "A live, bilingual medical website built to establish trust and online presence for a practicing gastroenterologist in Tier-2 / Tier-3 cities.",
     modalContent: {
-      problem: "Doctors in smaller cities (like Muzaffarpur, Patna) lack a strong, verified digital presence, leading to patient mistrust and reliance on chaotic aggregators.",
-      solution: "A mobile-first, high-trust personal website featuring a digital 'Trust Card', bilingual content (Hindi/English) for accessibility, and clear clinic operational data.",
+      problem:
+        "Doctors in Tier-2 and Tier-3 cities often lack a verified digital presence. Patients rely on word of mouth, leading to confusion, repeated queries, and lack of trust.",
+      solution:
+        "Built a simple, premium-feel personal branding website focused on trust, language accessibility, and clear clinic information rather than complex booking systems.",
       features: [
-        "Bilingual Interface (Hindi/English) for local inclusivity",
-        "Digital Trust Card & Verified Credentials",
-        "One-tap Appointment Booking & Location Navigation",
-        "Optimized for 2G/3G networks common in Tier-2/3 regions"
+        "Fully bilingual interface (English & Hindi)",
+        "Premium mobile web-app style UI",
+        "Separate mobile and desktop experiences",
+        "Clear doctor profile, qualifications, and clinic details"
       ],
-      technicalDetails: "Built with React for state management of language toggles. Styled with Tailwind for rapid, mobile-first design. Supabase backend allows the clinic staff to update timings in real-time.",
-      impact: "Established a verified digital identity, reducing patient inquiries about availability by 40% and building trust before the patient even enters the clinic.",
-      future: "V2 roadmap includes SEO dominance for local keywords and integration with a lightweight queuing system."
+      technicalDetails:
+        "Built using React.js and Tailwind CSS with a mobile-first approach. Supabase allows clinic staff to update timings and notices in real time without developer dependency.",
+      impact:
+        "The website is live on a custom domain and actively used by real patients, significantly reducing repeated availability-related queries.",
+      future:
+        "Version 2 will focus on performance optimization and stronger local SEO for improved regional reach."
     }
   },
   {
     id: "wellmind",
     title: "WellMind Junction",
-    tagline: "AI-Powered Youth Mental Wellness",
+    tagline: "Digital Mental Wellness Platform for Youth",
     type: "Flagship",
     nature: "Personal",
-    date: "Oct 2024",
+    date: "Aug 2023 – Present",
     links: {
-      github: "https://github.com/imaryan02/wellmind-junction"
+      demo: "https://wellmind-junction.vercel.app"
     },
     imageUrl: "/images/wellmind.png",
     tags: ["AI", "Mental Health", "TensorFlow"],
-    techStack: ["React.js", "TensorFlow.js", "Gemini API", "Supabase"],
-    hook: "AI-powered mental wellness platform with real-time emotion recognition and Arogya, an AI therapist-style chatbot.",
+    techStack: ["React.js", "Tailwind CSS", "TensorFlow.js", "Supabase", "Gemini API"],
+    hook:
+      "A live mental wellness platform designed for early emotional awareness and self-reflection, tested with 50+ real users.",
     modalContent: {
-      problem: "Mental health stigma is rampant in India, and professional therapy is often inaccessible or too expensive for students.",
+      problem:
+        "Mental health support in India is stigmatized and often inaccessible, especially for students and young adults.",
+      solution:
+        "Built a privacy-first digital platform focused on early emotional awareness and self-help, not as a replacement for therapy.",
       features: [
-        "Real-time Facial Emotion Detection via TensorFlow.js",
-        "Arogya: Empathetic AI Chatbot powered by Gemini API",
-        "Stress-relief games: 'Blast the Hen' & 'FacePlay'",
-        "Private User Dashboard tracking emotional trends over time"
+        "Real-time facial emotion recognition using TensorFlow.js",
+        "Arogya: AI-based supportive chatbot powered by Gemini",
+        "Mental health assessments and emotion tracking via facial analysis",
+        "Stress-relief games like Blast the Hen and FacePlay",
+        "User dashboard for progress tracking and emotional insights"
       ],
-      technicalDetails: "Utilizes browser-based machine learning (TensorFlow.js) to ensure privacy—video data never leaves the client. Gemini API is fine-tuned via system instructions to act as a supportive, non-clinical listener.",
-      future: "Plans to introduce voice-based journaling analysis and vernacular language support to reach rural demographics."
+      technicalDetails:
+        "Emotion detection runs fully in the browser to ensure privacy. Supabase manages user data, while Gemini API is scoped to act as a non-clinical, supportive listener.",
+      impact:
+        "The platform is live with real users and a deployed domain, validating user engagement and ethical AI boundaries.",
+      future:
+        "Future plans include voice journaling, vernacular language support, and deeper emotional trend analysis."
     }
   },
   {
     id: "spotme",
     title: "SpotMe",
-    tagline: "Privacy-First Event Photo Finder",
+    tagline: "Offline Smart Photo Finder",
     type: "Flagship",
     nature: "Personal",
-    date: "Dec 2024",
+    date: "Dec 2025",
     links: {
-      github: "https://github.com/imaryan02/spotme-faceapi"
+      demo: "https://spotmeindia.vercel.app"
     },
     imageUrl: "/images/spotme.png",
     tags: ["Computer Vision", "Privacy", "Offline"],
-    techStack: ["React.js", "FaceAPI.js", "Local Inference"],
-    hook: "Privacy-first offline photo finder for event photos (like Indian weddings), 98% accurate, works with local folders.",
+    techStack: ["React.js", "FaceAPI.js"],
+    hook:
+      "An offline photo finder that helps users instantly locate their photos from large event folders like Indian weddings.",
     modalContent: {
-      problem: "At Indian weddings and events, 10,000+ photos are clicked. Finding your own photos involves manually scrolling through gigabytes of data for hours.",
-      flow: "1. Upload Event Folder (Local) -> 2. Scan User's Face -> 3. AI Filters & Returns Matches.",
+      problem:
+        "Indian weddings generate thousands of photos, making it frustrating to manually search for personal images.",
+      solution:
+        "Built a fully offline, browser-based tool that performs face matching locally without uploading photos to any server.",
+      flow:
+        "Upload event folder → Scan your face → Get matching photos instantly",
       features: [
-        "100% Offline Processing - No Cloud Uploads",
-        "98% Accuracy on diverse Indian faces",
-        "Instant ZIP download or WhatsApp sharing",
-        "Zero Server Cost architecture"
+        "100% offline processing",
+        "98% face-matching accuracy",
+        "ZIP download or WhatsApp sharing",
+        "No server, no uploads, no data storage"
       ],
-      technicalDetails: "Leverages FaceAPI.js models loaded directly into the browser. Compute happens on the client device (Edge Computing), ensuring user photos are never stored on a third-party server.",
-      story: "Built out of personal frustration after waiting weeks for wedding photos. The chaotic scale of Indian events needed a technological solution."
+      technicalDetails:
+        "Uses FaceAPI.js models loaded directly in the browser, ensuring privacy and zero infrastructure cost.",
+      story:
+        "Inspired by personal frustration after waiting weeks to find photos from family events."
     }
   },
   {
     id: "jarvis",
     title: "JARVIS Assistant",
-    tagline: "Voice-Activated Web Navigator",
+    tagline: "Voice-Based Web Navigator",
     type: "Advanced",
     nature: "R&D",
-    date: "Aug 2024",
+    date: "Nov 2024 – Feb 2025",
     links: {
-      github: "https://github.com/imaryan02/jarvis-assistant"
+      demo: "https://jarvis-preview.vercel.app"
     },
-    imageUrl: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80",
     tags: ["Voice AI", "Automation", "Gemini"],
-    techStack: ["Gemini LLM", "Selenium", "Electron.js"],
-    hook: "Voice-activated assistant inspired by Iron Man. Handles hands-free browsing and Spotify control.",
+    techStack: ["Gemini LLM", "Electron.js", "Selenium"],
+    hook:
+      "An experimental Jarvis-inspired voice assistant for hands-free system interaction.",
     modalContent: {
-      problem: "Keyboard interaction is slow for multitasking.",
-      features: ["Wake-word activation ('Jarvis')", "Real-time web research summaries", "Spotify playback control via voice"],
-      technicalDetails: "Electron.js bridge allows the React frontend to execute system-level scripts via Selenium. Gemini processes natural language into actionable commands."
+      problem:
+        "Keyboard and mouse interactions slow down multitasking-heavy workflows.",
+      solution:
+        "Created a voice-first assistant that converts spoken commands into real system actions.",
+      features: [
+        "Wake-word activation ('Jarvis')",
+        "Context-aware voice conversations",
+        "Live web research summaries",
+        "Voice-controlled browsing and Spotify playback"
+      ],
+      technicalDetails:
+        "Electron bridges the UI with system-level actions, while Gemini interprets voice commands into executable steps."
     }
   },
   {
     id: "copypaste",
     title: "Copy Paste Guru",
-    tagline: "Ephemeral Real-Time Sharing",
+    tagline: "Real-Time Text Sharing",
     type: "Advanced",
     nature: "Personal",
-    date: "July 2024",
+    date: "Jun 2025 – Jul 2025",
     links: {
       demo: "https://copypaste.guru"
     },
     imageUrl: "/images/copypaste.png",
     tags: ["Productivity", "Real-Time"],
     techStack: ["React", "Supabase Realtime"],
-    hook: "Room-based, real-time note sharing for quick collaboration without login fatigue.",
+    hook:
+      "A minimal real-time text sharing tool designed to remove friction during quick collaborations.",
     modalContent: {
-      problem: "Sharing a snippet of code or text between devices usually involves emailing oneself or using bloated apps.",
-      features: ["Auto-expiring rooms (10 mins)", "Instant sync across devices", "No signup required"],
-      technicalDetails: "Uses Supabase Realtime subscriptions to broadcast keystrokes instantly to all connected clients in a specific room ID."
+      problem:
+        "Sharing small snippets across devices usually involves unnecessary steps.",
+      solution:
+        "Built a temporary, room-based sharing tool with no login requirement.",
+      features: [
+        "Room-based real-time sharing",
+        "Auto-expiring rooms (10 minutes)",
+        "No signup required"
+      ],
+      technicalDetails:
+        "Uses Supabase Realtime subscriptions for instant text synchronization."
     }
   },
   {
     id: "pharma-gpt",
     title: "Pharma Data GPT",
-    tagline: "Custom Analytics LLM",
+    tagline: "Pharma Analytics Assistant",
     type: "Advanced",
     nature: "Client Work",
-    date: "Dec 2023",
-    links: {},
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?auto=format&fit=crop&q=80",
+    date: "Nov 2023 – Jan 2024",
+    links: {
+      demo: "https://pharma-gpt-preview.vercel.app"
+    },
+    imageUrl:
+      "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?auto=format&fit=crop&q=80",
     tags: ["Prompt Engineering", "Analytics"],
     techStack: ["GPT-4", "Python"],
-    hook: "Custom GPT built for Brand Innerworld to analyze complex pharmaceutical datasets.",
+    hook:
+      "A custom GPT built to help pharma teams extract insights from complex datasets.",
     modalContent: {
-      problem: "Brand managers drowned in spreadsheets and struggled to extract quick insights.",
-      features: ["Natural language query for data", "40% faster analysis", "Context-aware answers"],
-      technicalDetails: "Heavily optimized system prompts ensuring strict adherence to medical compliance and data accuracy."
+      problem:
+        "Brand managers struggled to derive insights from large pharma datasets.",
+      solution:
+        "Designed a prompt-optimized GPT that converts natural language questions into accurate analytical insights.",
+      features: [
+        "Natural language data queries",
+        "40% faster analysis",
+        "30% improvement in response accuracy"
+      ],
+      technicalDetails:
+        "Focused on prompt optimization, accuracy, and medical data compliance."
     }
   },
   {
     id: "glametique",
     title: "Glametique India",
-    tagline: "Beauty E-commerce UI",
+    tagline: "Beauty Brand Website",
     type: "Client",
     nature: "Freelance",
-    date: "June 2023",
-    links: {},
-    imageUrl: "https://images.unsplash.com/photo-1596462502278-27bfdd403348?auto=format&fit=crop&q=80",
+    date: "Jan 2024",
+    links: {
+      demo: "https://glametiqueindia.vercel.app"
+    },
+    imageUrl:
+      "https://images.unsplash.com/photo-1596462502278-27bfdd403348?auto=format&fit=crop&q=80",
     tags: ["Frontend", "Design"],
     techStack: ["HTML", "CSS", "JS"],
-    hook: "Responsive beauty website focusing on aesthetic product displays.",
+    hook:
+      "A responsive website built for a beauty and cosmetics brand on a tight budget.",
     modalContent: {
-      problem: "Client needed a visual upgrade to compete in the crowded beauty market.",
-      features: ["Mobile-first layout", "High-fidelity imagery", "Fast load times"],
-      technicalDetails: "Custom CSS architecture without heavy frameworks to ensure maximum performance on low-end devices."
+      problem:
+        "The client needed a modern website without heavy development costs.",
+      solution:
+        "Delivered a lightweight, responsive frontend using plain web technologies.",
+      features: [
+        "Mobile-first layout",
+        "Optimized performance",
+        "Clear product presentation"
+      ],
+      technicalDetails:
+        "Built using HTML, CSS, and JavaScript to maximize performance on low-end devices."
     }
   },
   {
     id: "ocean",
     title: "Ocean Biotech",
-    tagline: "Pharma Portfolio",
+    tagline: "Pharma Company Website",
     type: "Client",
     nature: "Client Work",
-    date: "May 2023",
+    date: "Jul 2023 – Aug 2023",
     links: {
       demo: "https://oceanbiotech.in"
     },
-    imageUrl: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80",
     tags: ["Corporate", "Web"],
     techStack: ["HTML", "CSS", "JS"],
-    hook: "Official product website for a biotech firm showcasing medicines.",
+    hook:
+      "A corporate website built to showcase a pharmaceutical product portfolio.",
     modalContent: {
-      problem: "Legacy offline catalog restricted business reach.",
-      features: ["Digital Medicine Catalog", "Corporate Profile", "Contact Integration"],
-      technicalDetails: "Static site generation approach for reliability and SEO."
+      problem:
+        "Offline catalogs limited the company’s digital reach.",
+      solution:
+        "Created a static, SEO-friendly website to reliably present products online.",
+      features: [
+        "Digital product catalog",
+        "Company profile",
+        "Contact information"
+      ],
+      technicalDetails:
+        "Static site approach chosen for simplicity, stability, and SEO."
     }
   },
   {
     id: "chaiwale",
     title: "ChaiWale",
-    tagline: "Hyperlocal Cafe Site",
+    tagline: "Local Cafe Website",
     type: "Client",
     nature: "Client Work",
-    date: "2022",
-    links: {},
-    imageUrl: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80",
+    date: "Aug 2022 – Sep 2022",
+    links: {
+      demo: "https://chaiwale-preview.vercel.app"
+    },
+    imageUrl:
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80",
     tags: ["Local Business", "Web"],
     techStack: ["HTML", "CSS", "JS"],
-    hook: "Where it started—helping a local cafe business go digital.",
+    hook:
+      "My first real-world project, helping a local cafe go digital.",
     modalContent: {
-      problem: "Local cafe had no way to showcase menu to digital-first students.",
-      features: ["Digital Menu", "Vibrant Aesthetic", "Social Media Integration"],
-      technicalDetails: "Simple, robust HTML/CSS structure tailored for a quick launch."
+      problem:
+        "The cafe had no digital presence for nearby students.",
+      solution:
+        "Built a simple, fast-loading website to showcase menu and location.",
+      features: [
+        "Digital menu",
+        "Simple layout",
+        "Social media integration"
+      ],
+      technicalDetails:
+        "Kept intentionally simple for quick delivery and easy maintenance."
     }
   }
 ];
+
 
 export const EVENTS: EventItem[] = [
   {
     name: "Google GDC",
     location: "Jaipur",
     year: "2024",
-    description: "Google Developer Conference focusing on Cloud and AI.",
-    takeaway: "Gained insights into the latest Gemini models and Google Cloud infrastructure, influencing the architecture of WellMind Junction."
+    description: "Google Developer Conference focused on Cloud, AI, and developer tooling.",
+    takeaway:
+      "Gained hands-on exposure to Gemini models and Google Cloud services. This influenced my decision to use Gemini thoughtfully in WellMind Junction, focusing on privacy, scope control, and real user impact rather than demo-driven AI."
   },
   {
     name: "Startup Mahakumbh",
     location: "Delhi",
     year: "2025",
-    description: "India's largest gathering of startups and investors.",
-    takeaway: "Validated the 'Building for Bharat' thesis. Connected with healthtech founders who emphasized the need for offline-first capabilities in Tier-2 India."
+    description: "India’s largest startup ecosystem event bringing together founders, investors, and policymakers.",
+    takeaway:
+      "Strongly validated my 'Building for Bharat' mindset. Conversations with healthtech founders highlighted the importance of offline-first design, simple UX, and trust-driven systems for Tier-2 and Tier-3 India."
   },
   {
     name: "Bengaluru Tech Summit",
     location: "Bengaluru",
     year: "2025",
-    description: "Asia's leading technology innovation summit.",
-    takeaway: "Deep dive into Enterprise AI. Realized the gap between 'cool demos' and 'scalable products', reshaping my approach to engineering discipline."
+    description: "Large-scale technology and innovation summit focused on enterprise and deep-tech solutions.",
+    takeaway:
+      "Helped me understand the gap between impressive demos and production-grade systems. Reinforced the importance of engineering discipline, scalability, and long-term thinking while building real products."
   }
 ];
