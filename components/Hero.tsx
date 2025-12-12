@@ -4,7 +4,7 @@ import { ArrowRight, Download, Play } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
 
         {/* Left Content */}
