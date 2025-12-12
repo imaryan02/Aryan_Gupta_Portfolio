@@ -197,7 +197,7 @@ export const PROJECTS: Project[] = [
     nature: "Personal",
     date: "Aug 2023 – Present",
     links: {
-      demo: "https://wellmind-junction.vercel.app"
+      demo: "https://www.wellmindjunction.com/"
     },
     imageUrl: "/images/wellmind.png",
     tags: ["AI", "Mental Health", "TensorFlow"],
@@ -266,7 +266,7 @@ export const PROJECTS: Project[] = [
     nature: "R&D",
     date: "Nov 2024 – Feb 2025",
     links: {
-      demo: "https://jarvis-preview.vercel.app"
+      // demo: "#"
     },
     imageUrl:
       "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80",
@@ -297,7 +297,7 @@ export const PROJECTS: Project[] = [
     nature: "Personal",
     date: "Jun 2025 – Jul 2025",
     links: {
-      demo: "https://copypaste.guru"
+      demo: "https://copypasteguru.vercel.app/"
     },
     imageUrl: "/images/copypaste.png",
     tags: ["Productivity", "Real-Time"],
@@ -326,10 +326,9 @@ export const PROJECTS: Project[] = [
     nature: "Client Work",
     date: "Nov 2023 – Jan 2024",
     links: {
-      demo: "https://pharma-gpt-preview.vercel.app"
+      demo: "https://chatgpt.com/g/g-QBAZNQhMv-brand-innerworld-pharma-data-analyst"
     },
-    imageUrl:
-      "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?auto=format&fit=crop&q=80",
+    imageUrl: "/images/bigpt.png",
     tags: ["Prompt Engineering", "Analytics"],
     techStack: ["GPT-4", "Python"],
     hook:
@@ -356,10 +355,9 @@ export const PROJECTS: Project[] = [
     nature: "Freelance",
     date: "Jan 2024",
     links: {
-      demo: "https://glametiqueindia.vercel.app"
+      demo: "https://glametique-jaipur-433su944m-imaryan02s-projects.vercel.app/"
     },
-    imageUrl:
-      "https://images.unsplash.com/photo-1596462502278-27bfdd403348?auto=format&fit=crop&q=80",
+    imageUrl: "/images/glam.png",
     tags: ["Frontend", "Design"],
     techStack: ["HTML", "CSS", "JS"],
     hook:
@@ -386,10 +384,9 @@ export const PROJECTS: Project[] = [
     nature: "Client Work",
     date: "Jul 2023 – Aug 2023",
     links: {
-      demo: "https://oceanbiotech.in"
+      demo: "https://ocean-biotech.vercel.app/"
     },
-    imageUrl:
-      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80",
+    imageUrl: "/images/ocean.png",
     tags: ["Corporate", "Web"],
     techStack: ["HTML", "CSS", "JS"],
     hook:
@@ -416,10 +413,9 @@ export const PROJECTS: Project[] = [
     nature: "Client Work",
     date: "Aug 2022 – Sep 2022",
     links: {
-      demo: "https://chaiwale-preview.vercel.app"
+      demo: "https://chaiwale-aryan.vercel.app/"
     },
-    imageUrl:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80",
+    imageUrl: "/images/chai.png",
     tags: ["Local Business", "Web"],
     techStack: ["HTML", "CSS", "JS"],
     hook:

@@ -44,7 +44,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg text-secondary mb-10 max-w-lg leading-relaxed font-medium"
           >
-            Crafting digital ecosystems for India. From "delusional" ideas to engineered reality, bridging the gap between Silicon Valley tech and Tier-2 Bharat.
+            I build real, live digital products for India — from healthcare platforms to AI-driven wellness tools — with a deep focus on purpose-driven work that genuinely improves people’s lives at scale.
           </motion.p>
 
           <motion.div
