@@ -5,7 +5,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/imaryan02",
   linkedin: "https://linkedin.com/in/imaryan02",
   email: "aryan.official02@gmail.com",
-  instagram: "https://instagram.com/imaryan02",
+  instagram: "https://instagram.com/im_aryan02",
 };
 
 export const EXPERIENCE: Experience[] = [
@@ -82,13 +82,13 @@ export const EDUCATION: EducationItem[] = [
     grade: "8.0 CGPA"
   },
   {
-    institution: "Delhi Public School (DPS)",
+    institution: "Delhi Public School (DPS), Jaipur",
     degree: "Higher Secondary, PCM",
     period: "Apr 2017 - May 2019",
     grade: "76%"
   },
   {
-    institution: "Usha Martin World School",
+    institution: "Usha Martin World School, Patna",
     degree: "High School",
     period: "Apr 2014 - Mar 2017",
     grade: "9.8 CGPA"
