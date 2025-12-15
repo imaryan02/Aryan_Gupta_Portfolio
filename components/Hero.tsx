@@ -60,9 +60,9 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-india-blue via-primary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
 
-            <button className="group px-8 py-4 rounded-full border border-subtle bg-white text-primary font-bold hover:border-india-saffron hover:text-india-saffron transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md">
+            {/* <button className="group px-8 py-4 rounded-full border border-subtle bg-white text-primary font-bold hover:border-india-saffron hover:text-india-saffron transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md">
               Download Resume <Download size={20} className="group-hover:translate-y-1 transition-transform" />
-            </button>
+            </button> */}
           </motion.div>
         </div>
 
