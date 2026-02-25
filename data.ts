@@ -377,34 +377,37 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    id: "ocean",
-    title: "Ocean Biotech",
-    tagline: "Pharma Company Website",
-    type: "Client",
-    nature: "Client Work",
-    date: "Jul 2023 – Aug 2023",
-    links: {
-      demo: "https://ocean-biotech.vercel.app/"
-    },
-    imageUrl: "/images/ocean.png",
-    tags: ["Corporate", "Web"],
-    techStack: ["HTML", "CSS", "JS"],
-    hook:
-      "A corporate website built to showcase a pharmaceutical product portfolio.",
-    modalContent: {
-      problem:
-        "Offline catalogs limited the company’s digital reach.",
-      solution:
-        "Created a static, SEO-friendly website to reliably present products online.",
-      features: [
-        "Digital product catalog",
-        "Company profile",
-        "Contact information"
-      ],
-      technicalDetails:
-        "Static site approach chosen for simplicity, stability, and SEO."
-    }
+  id: "ocean",
+  title: "Ocean Biotech",
+  tagline: "Pharma Product Management Platform",
+  type: "Client",
+  nature: "Client Work",
+  date: "Jul 2023 – Present",
+  links: {
+    demo: "https://www.oceanbiotech.in/"
   },
+  imageUrl: "/images/ocean.png",
+  tags: ["Healthcare", "Pharma", "Admin Panel", "RLS"],
+  techStack: ["React", "TypeScript", "Supabase", "PostgreSQL", "TailwindCSS", "Vercel"],
+  hook:
+    "A production-grade pharma product platform with secure admin panel and row-level security.",
+  modalContent: {
+    problem:
+      "The company relied on offline catalogs and manual product updates, limiting digital visibility and operational efficiency.",
+    solution:
+      "Built a secure, scalable web platform with dynamic product management and role-based admin access.",
+    features: [
+      "Public product catalog with SEO optimization",
+      "Admin dashboard for product & category management",
+      "Role-based access control (super_admin, admin, managers)",
+      "Row Level Security (RLS) enforced via Supabase",
+      "Secure media management for product images",
+      "Draft / Published product workflow"
+    ],
+    technicalDetails:
+      "Built using React + TypeScript with Supabase backend. Implemented PostgreSQL RLS policies, custom role helpers, and secure admin workflows. Deployed on Vercel with production-ready access control."
+  }
+},
   {
     id: "chaiwale",
     title: "ChaiWale",
