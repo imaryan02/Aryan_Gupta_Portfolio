@@ -66,3 +66,21 @@ export interface Story {
   link: string; // URL to LinkedIn post
   tags: string[];
 }
+
+export interface Achievement {
+  id: string;
+  title: string;
+  subtitle: string;
+  event: string;
+  date: string;
+  location: string;
+  rank: string;
+  images: string[];
+  imageShape: 'portrait' | 'square';
+  tags: string[];
+  summary: string;
+  content: string[];
+  links?: {
+    github?: string;
+  };
+}

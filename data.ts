@@ -1,5 +1,5 @@
 
-import { Experience, Project, SkillCategory, EventItem, EducationItem, Story } from './types';
+import { Experience, Project, SkillCategory, EventItem, EducationItem, Story, Achievement } from './types';
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/imaryan02",
@@ -151,6 +151,83 @@ export const STORIES: Story[] = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7136786988896075776/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7136786988896075776%29", // Update with actual post link
     tags: ["#SIH2023", "#Leadership", "#MentalHealthTech"],
     description: "Team YuvaShakti participated in Smart India Hackathon 2023. Out of 71 participating teams, we secured an impressive 8th position in prelims. Our Problem Statement focused on a Mental health surveillance solution. We worked tirelessly day and night, overcoming countless sleepless nights. Though it hurts that we couldn't make it to the SIH finals, the journey of 3 months taught us teamwork, resilience, and the power of believing in a shared vision."
+  }
+];
+
+export const ACHIEVEMENTS: Achievement[] = [
+  {
+    id: "google-apl-finals",
+    title: "Google Hackathon Finals at Google Ananta",
+    subtitle: "India's Top 80 finalists from 3000+ participants",
+    event: "Google Cloud Agentic Premier League",
+    date: "May 2026",
+    location: "Google Ananta, Bengaluru",
+    rank: "Top 80 Finalist",
+    images: [
+      "/images/agplfinal1.png",
+      "/images/agplfinal2.png",
+      "/images/agplfinal3.png",
+      "/images/agplfinal4.png"
+    ],
+    imageShape: "portrait",
+    tags: ["Google Cloud", "Hackathon", "Agentic AI", "Bengaluru"],
+    summary:
+      "Reached the national finals at Google Ananta, Bengaluru, after competing against 3000+ participants across India.",
+    content: [
+      "We could not make it all the way, but it was a memorable experience. There was disappointment, and there were definitely better plans that could have been executed, but reaching India's Top 80 finalists from 3000+ participants is something I am proud of.",
+      "Thanks to Google and Google Cloud for the amazing hospitality. Google Ananta has my heart.",
+      "A special thanks to Mansi Agarwal and Anupam Sanghai for supporting us throughout the journey. You both felt like seniors who guided us and took care of us like family.",
+      "I never imagined I would go to Google, that too with my own friends Ayush Garg and Ashutosh Vijay.",
+      "Sorry Jaipur Community, Gaurav Kheterpal Sir, and Vikas Bajpai Sir. We could not make it this time, but we will try better next time.",
+      "Hope we meet again, Google."
+    ]
+  },
+  {
+    id: "google-apl-jaipur",
+    title: "AGPL Regional Level - Jaipur",
+    subtitle: "Top 3 individual performers, selected for Google Bengaluru finals",
+    event: "Google Cloud Agentic Premier League Jaipur",
+    date: "May 2026",
+    location: "Jaipur",
+    rank: "Top 3 Regional",
+    images: ["/images/agplJp.jpeg"],
+    imageShape: "square",
+    tags: ["Google Cloud", "Jaipur", "Finalist", "Build With AI"],
+    summary:
+      "Selected among the Top 3 individual performers from the Jaipur regional round, earning a place in the grand finale at Google Ananta.",
+    content: [
+      "Me and my friends Ayush Garg and Ashutosh Vijay were selected as Top 3 individual performers from the Google Cloud Agentic Premier League Jaipur.",
+      "That selection officially took us to the grand finale in Bengaluru at the Google Ananta office.",
+      "It felt unreal to see Jaipur to Bengaluru become an actual journey. We were proud to represent Jaipur at the finals hosted by Google Cloud.",
+      "Huge thanks to Mansi Agarwal for all the guidance and support, and to Gaurav Kheterpal Sir and Vikas Bajpai Sir for conducting this amazing event in Jaipur.",
+      "Bengaluru was calling, and we went in hoping for the best."
+    ]
+  },
+  {
+    id: "openai-codex-delhi",
+    title: "OpenAI Codex Community Hackathon",
+    subtitle: "Top 10 winners at the Delhi edition",
+    event: "OpenAI Codex Community Hackathon - Delhi",
+    date: "2026",
+    location: "New Delhi",
+    rank: "Top 10 Winner",
+    images: ["/images/openAiwin.jpeg"],
+    imageShape: "square",
+    tags: ["OpenAI", "Codex", "Healthcare AI", "OPD Assist"],
+    summary:
+      "Built OPD Assist, an AI-powered healthcare workflow assistant, and ranked among the Top 10 teams from 50+ submissions.",
+    links: {
+      github: "https://lnkd.in/gAgWMBMR"
+    },
+    content: [
+      "We made it into the Top 10 winners of the OpenAI Codex Community Hackathon - Delhi Edition.",
+      "From Jaipur to New Delhi, my friend Ayush Garg and I traveled with an idea, our laptops, and a lot of excitement to build alongside some of the best AI minds in the room.",
+      "We built OPD Assist, an AI-powered healthcare workflow assistant designed to simplify OPD and patient operations.",
+      "Out of 50+ submissions, seeing our project make it into the Top 10 was incredibly exciting.",
+      "Building with Codex was an amazing experience. Turning ideas into working products at high speed felt surreal.",
+      "Huge thanks to Vaibhav Srivastav, Gabriel Chua, Kushal Vijay, Shivay Lamba, Arsh Goyal, OpenAI, and the entire organizing team for putting together such an incredible hackathon and community.",
+      "Still learning. Still building."
+    ]
   }
 ];
 

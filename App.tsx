@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import Achievements from './components/Achievements';
 import Stories from './components/Stories';
 import Projects from './components/Projects';
 import Events from './components/Events';
@@ -38,6 +39,7 @@ function App() {
         <ProjectBanner />
         <About />
         <Skills />
+        <Achievements />
         <Experience />
         <Education />
         <Stories />
