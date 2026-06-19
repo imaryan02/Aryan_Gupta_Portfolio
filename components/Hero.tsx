@@ -1,14 +1,33 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { SOCIAL_LINKS } from '../data';
 
 const PROFILE_IMAGE = '/images/aryan.jpg';
 
-const buildVCardHref = () => {
-  const origin = typeof window !== 'undefined' ? window.location.origin : SOCIAL_LINKS.portfolio;
+const foldVCardLine = (line: string) => {
+  const chunks = line.match(/.{1,72}/g) ?? [''];
+  return chunks.map((chunk, index) => (index === 0 ? chunk : ` ${chunk}`)).join('\n');
+};
+
+const readImageAsBase64 = async (imageUrl: string) => {
+  const response = await fetch(imageUrl);
+  const blob = await response.blob();
+
+  return new Promise<string>((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      const result = reader.result?.toString() ?? '';
+      resolve(result.split(',')[1] ?? '');
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+};
+
+const buildVCardHref = async () => {
   const portfolioUrl = typeof window !== 'undefined' ? window.location.href : SOCIAL_LINKS.portfolio;
-  const photoUrl = new URL(PROFILE_IMAGE, origin).toString();
+  const photoBase64 = await readImageAsBase64(PROFILE_IMAGE);
 
   const fields = [
     'BEGIN:VCARD',
@@ -20,21 +39,43 @@ const buildVCardHref = () => {
     SOCIAL_LINKS.phone ? `TEL;TYPE=CELL:${SOCIAL_LINKS.phone}` : '',
     `URL;TYPE=Portfolio:${portfolioUrl}`,
     `URL;TYPE=LinkedIn:${SOCIAL_LINKS.linkedin}`,
-    `URL;TYPE=GitHub:${SOCIAL_LINKS.github}`,
-    `URL;TYPE=Instagram:${SOCIAL_LINKS.instagram}`,
-    `PHOTO;VALUE=URI:${photoUrl}`,
+    photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
     'NOTE:Software Engineer building purpose-driven digital products for India.',
     'END:VCARD',
   ].filter(Boolean);
 
-  return `data:text/vcard;charset=utf-8,${encodeURIComponent(fields.join('\n'))}`;
+  const vCard = fields.map(foldVCardLine).join('\n');
+  const blob = new Blob([vCard], { type: 'text/vcard;charset=utf-8' });
+
+  return URL.createObjectURL(blob);
 };
 
 const Hero = () => {
-  const vCardHref = useMemo(buildVCardHref, []);
+  const [vCardHref, setVCardHref] = useState('');
+
+  useEffect(() => {
+    let objectUrl = '';
+    let isMounted = true;
+
+    buildVCardHref().then((href) => {
+      objectUrl = href;
+      if (isMounted) {
+        setVCardHref(href);
+      } else {
+        URL.revokeObjectURL(href);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+      if (objectUrl) {
+        URL.revokeObjectURL(objectUrl);
+      }
+    };
+  }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 pb-24 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-6 relative pt-32 md:pt-28 lg:pt-20 pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
 
         {/* Left Content */}
@@ -91,9 +132,15 @@ const Hero = () => {
             </a>
 
             <a
-              href={vCardHref}
+              href={vCardHref || undefined}
               download="Aryan-Gupta.vcf"
-              className="hidden sm:flex group px-8 py-4 rounded-full border border-india-saffron/30 bg-white text-primary font-bold hover:border-india-saffron hover:text-india-saffron transition-all duration-300 items-center gap-2 shadow-sm hover:shadow-md"
+              aria-disabled={!vCardHref}
+              onClick={(event) => {
+                if (!vCardHref) {
+                  event.preventDefault();
+                }
+              }}
+              className="group flex items-center justify-center gap-3 rounded-full border border-india-saffron/40 bg-gradient-to-r from-india-saffron/15 via-white to-white px-8 py-4 text-primary font-bold shadow-lg shadow-india-saffron/10 transition-all duration-300 hover:-translate-y-0.5 hover:border-india-saffron hover:text-india-saffron hover:shadow-xl"
             >
               Save Contact <Download size={20} className="group-hover:translate-y-1 transition-transform" />
             </a>
@@ -144,26 +191,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
-          <motion.a
-            href={vCardHref}
-            download="Aryan-Gupta.vcf"
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.75 }}
-            className="sm:hidden absolute -bottom-8 left-1/2 z-30 flex w-[min(92vw,360px)] -translate-x-1/2 items-center justify-between rounded-2xl border border-white/70 bg-gradient-to-r from-india-saffron via-white to-white px-4 py-3 text-primary shadow-2xl shadow-india-saffron/20 backdrop-blur"
-          >
-            <span className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white shadow-lg">
-                <Download size={20} />
-              </span>
-              <span className="flex flex-col leading-tight">
-                <span className="font-clash text-lg font-bold">Save Contact</span>
-                <span className="text-xs font-bold uppercase tracking-wider text-india-blue">Aryan Gupta vCard</span>
-              </span>
-            </span>
-            <ArrowRight size={20} className="text-india-saffron" />
-          </motion.a>
         </motion.div>
 
       </div>

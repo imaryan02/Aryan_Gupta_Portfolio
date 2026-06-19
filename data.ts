@@ -7,7 +7,7 @@ export const SOCIAL_LINKS = {
   email: "aryan.official02@gmail.com",
   instagram: "https://instagram.com/im_aryan02",
   portfolio: "https://aryan-gupta-portfolio.vercel.app/",
-  phone: "",
+  phone: "8529586946",
 };
 
 export const EXPERIENCE: Experience[] = [
