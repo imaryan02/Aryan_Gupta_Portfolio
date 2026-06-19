@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Play } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
+import { SOCIAL_LINKS } from '../data';
+
+const PROFILE_IMAGE = '/images/aryan.jpg';
+
+const buildVCardHref = () => {
+  const origin = typeof window !== 'undefined' ? window.location.origin : SOCIAL_LINKS.portfolio;
+  const portfolioUrl = typeof window !== 'undefined' ? window.location.href : SOCIAL_LINKS.portfolio;
+  const photoUrl = new URL(PROFILE_IMAGE, origin).toString();
+
+  const fields = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'N:Gupta;Aryan;;;',
+    'FN:Aryan Gupta',
+    'TITLE:Software Engineer',
+    'EMAIL;TYPE=INTERNET,WORK:aryan.official02@gmail.com',
+    SOCIAL_LINKS.phone ? `TEL;TYPE=CELL:${SOCIAL_LINKS.phone}` : '',
+    `URL;TYPE=Portfolio:${portfolioUrl}`,
+    `URL;TYPE=LinkedIn:${SOCIAL_LINKS.linkedin}`,
+    `URL;TYPE=GitHub:${SOCIAL_LINKS.github}`,
+    `URL;TYPE=Instagram:${SOCIAL_LINKS.instagram}`,
+    `PHOTO;VALUE=URI:${photoUrl}`,
+    'NOTE:Software Engineer building purpose-driven digital products for India.',
+    'END:VCARD',
+  ].filter(Boolean);
+
+  return `data:text/vcard;charset=utf-8,${encodeURIComponent(fields.join('\n'))}`;
+};
 
 const Hero = () => {
+  const vCardHref = useMemo(buildVCardHref, []);
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -60,9 +90,13 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-india-blue via-primary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
 
-            {/* <button className="group px-8 py-4 rounded-full border border-subtle bg-white text-primary font-bold hover:border-india-saffron hover:text-india-saffron transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md">
-              Download Resume <Download size={20} className="group-hover:translate-y-1 transition-transform" />
-            </button> */}
+            <a
+              href={vCardHref}
+              download="Aryan-Gupta.vcf"
+              className="hidden sm:flex group px-8 py-4 rounded-full border border-india-saffron/30 bg-white text-primary font-bold hover:border-india-saffron hover:text-india-saffron transition-all duration-300 items-center gap-2 shadow-sm hover:shadow-md"
+            >
+              Save Contact <Download size={20} className="group-hover:translate-y-1 transition-transform" />
+            </a>
           </motion.div>
         </div>
 
@@ -81,7 +115,7 @@ const Hero = () => {
             {/* Main Image Container */}
             <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl z-10 bg-gray-100">
               <img
-                src="/images/aryan.jpg"
+                src={PROFILE_IMAGE}
                 alt="Aryan Gupta"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -110,6 +144,26 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          <motion.a
+            href={vCardHref}
+            download="Aryan-Gupta.vcf"
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.75 }}
+            className="sm:hidden absolute -bottom-8 left-1/2 z-30 flex w-[min(92vw,360px)] -translate-x-1/2 items-center justify-between rounded-2xl border border-white/70 bg-gradient-to-r from-india-saffron via-white to-white px-4 py-3 text-primary shadow-2xl shadow-india-saffron/20 backdrop-blur"
+          >
+            <span className="flex items-center gap-3">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white shadow-lg">
+                <Download size={20} />
+              </span>
+              <span className="flex flex-col leading-tight">
+                <span className="font-clash text-lg font-bold">Save Contact</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-india-blue">Aryan Gupta vCard</span>
+              </span>
+            </span>
+            <ArrowRight size={20} className="text-india-saffron" />
+          </motion.a>
         </motion.div>
 
       </div>
